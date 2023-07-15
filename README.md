@@ -15,7 +15,7 @@ To install the application, follow these steps:
 ## Usage
 To use the application, follow these steps:
 
-1.  Follow the procedure given in the [Installation](#Installation) section.
+1.  Follow the procedure given in the [Installation](https://github.com/duhawala/Kings-Legion#installation) section.
 2.  Basically, it's a Hangman game; follow the prompts and guess the word.
 
 ## Credits
