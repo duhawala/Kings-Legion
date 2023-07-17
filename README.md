@@ -32,8 +32,7 @@ There are Three members in our Team [KINGS LEGION], making a Text-Based ASCII ga
 
 
 # Final Verdict
-The whole project work went very smoothly and every member showed co-operation to each other while doing different tasks. Hope you'll enjoy using that game and will find it faultless. :)
-
+The entire project went smoothly, and each member cooperated while carrying out their various roles. We hope you will have fun playing that game and that you'll find it flawless ;)
 
 ## LICENSE
 This project is licensed under the MIT License.
