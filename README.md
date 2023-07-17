@@ -19,7 +19,7 @@ To use the application, follow these steps:
 2.  Basically, it's a Hangman game; follow the prompts and guess the word.
 
 ## Credits
-This project was created by **Murtuza Duhawala, Abduallah Ajaz and Umer Zahir.**
+This project was created by **Murtuza Duhawala, ABDULLAH ABDULLAH and Umer Zahir.**
 
 ## License
 This project is licensed under the MIT License.
