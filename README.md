@@ -31,6 +31,9 @@ There are Three members in our Team [KINGS LEGION], making a Text-Based ASCII ga
 - **Hafiz Umer Zahir - 00000000**
 
 
+# Final Verdict
+The whole project work went very smoothly and every member showed co-operation to each other while doing different tasks. Hope you'll enjoy using that game and will find it faultless. :)
+
 
 ## LICENSE
 This project is licensed under the MIT License.
