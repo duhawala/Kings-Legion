@@ -1,9 +1,9 @@
 # KING's LEGION - ASCII/Text Based Game  
 
-## Description 
+## DESCRIPTION 
 Two cowboy shooters in a small town face off, taking a few steps back. With a swift draw at 1..2..3, one falls.
 
-## Installation 
+## INSTALLATION
 To install the application, follow these steps:
 
 1. Ensure that your system has GCC.
@@ -12,14 +12,21 @@ To install the application, follow these steps:
 4. After compilation using GCC in C++, another file is generated, which is **a.out**
 5. To run the application directly, use **./a.out**
 
-## Usage
+## USAGE
 To use the application, follow these steps:
 
 1.  Follow the procedure given in the [Installation](https://github.com/duhawala/Kings-Legion#installation) section.
 2.  Basically, it's a Hangman game; follow the prompts and guess the word.
 
-## Credits
-This project was created by **Murtuza Duhawala, ABDULLAH ABDULLAH and Umer Zahir.**
+## CREDITS
 
-## License
+There are Three members in our Team [KINGS LEGION], making a Text-Based ASCII game in C++. Everyone uniformly contributed towards the completion of the project.
+
+- **Abdullah Abdullah - 11337261**
+- **Murtuza Duhawala - 13280734**
+- **Hafiz Umer Zahir - 00000000**
+
+
+
+## LICENSE
 This project is licensed under the MIT License.
