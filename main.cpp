@@ -1,6 +1,6 @@
 /*
 * Brief description 
-* Two cowboy shooters in a small town face off, taking a few steps back. With a swift draw at 1..2..3, one falls.
+* 
 */
 
 // Header Files - Murtuza Duhawala
