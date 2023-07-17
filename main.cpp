@@ -75,7 +75,7 @@ int main()
     return 0;
 }
 
-// Welcome Message - Abdullah Ajaz
+// Welcome Message - ABDULLAH ABDULLAH
 void greetings()
 {
     char ch;
@@ -92,7 +92,7 @@ void greetings()
     cin >> ch;
 }
 
-// User Inputs - Abdullah Ajaz
+// User Inputs - ABDULLAH ABDULLAH
 int user_input(const string words[], char blank_for_word[], const int list_limit)
 {
     int random_word = rand() % 12;
@@ -116,7 +116,7 @@ void each_word(const int list_limit, ifstream &inputFile, string words[])
         }
 }
 
-// Score - Abdullah Ajaz
+// Score - ABDULLAH ABDULLAH
 int letter_checker(const string words[], char blank_for_word[], int &word_index)
 {
     char letter;
