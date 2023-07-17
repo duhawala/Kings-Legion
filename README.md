@@ -2,6 +2,8 @@
 
 4075CEM - Activity led Computer science Project 2
 
+
+
 ## DESCRIPTION 
 In this age-old text-based game of Hangman, the player must guess a hidden word by putting letters together. With each incorrect guess, a new body part is added to the hanging man, which is represented by ASCII graphics in the game. The objective is to identify the word before the hangman becomes fully formed.
 
