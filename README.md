@@ -8,7 +8,7 @@ To install the application, follow these steps:
 
 1. Ensure that your system has GCC.
 2. Clone the repository: `https://github.com/duhawala/Kings-Legion`.
-3. I have already compiled the code using GCC with the command **g++ main.cpp**, so you don't need to compile it again.
+3. After cloning the repository the user will be need to type this command **g++ main.cpp** to compile it.
 4. After compilation using GCC in C++, another file is generated, which is **a.out**
 5. To run the application directly, use **./a.out**
 
