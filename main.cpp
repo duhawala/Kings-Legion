@@ -40,33 +40,33 @@ int main()
         cout << "You have a future yet to be determined\n";
     else
     {
-        int word_index, game_score;
-        int try_index = 0;
-        char blank_for_word[word_limit];
+        int checker, board_points;
+        int checkit = 0;
+        char space[word_limit];
         int score_list[list_limit];
         string words_list[list_limit];
-        char option;
+        char choice;
 
         each_word(list_limit, inputFile, words);
 
         do
         {
-            word_index = user_input(words, blank_for_word, list_limit);
-            game_score = letter_checker(words, blank_for_word, word_index);
+            checker = user_input(words, space, list_limit);
+            board_points = letter_checker(words, space, checker);
             
-            words_list[try_index] = words[word_index];
-            score_list[try_index] = game_score;
+            words_list[checkit] = words[checker];
+            score_list[checkit] = board_points;
 
-            try_index++;
+            checkit++;
 
-        } while (option == 'y' || option == 'n');
+        } while (choice == 'y' || choice == 'n');
 
         inputFile.close();
 
         ofstream outputFile;
         outputFile.open("PointsOfScores.txt");
 
-        score_marker(outputFile, score_list, words_list, try_index);
+        score_marker(outputFile, score_list, words_list, checkit);
 
         outputFile.close();
 
@@ -93,14 +93,14 @@ void greetings()
 }
 
 // User Inputs - ABDULLAH ABDULLAH
-int user_input(const string words[], char blank_for_word[], const int list_limit)
+int user_input(const string words[], char space[], const int list_limit)
 {
     int random_word = rand() % 12;
 
     for (int blanks = 0; blanks < words[random_word].length(); blanks++)
     {
-        blank_for_word[blanks] = '_';
-        cout << blank_for_word[blanks] << " ";
+        space[blanks] = '_';
+        cout << space[blanks] << " ";
     }
     return random_word;
 }
@@ -117,7 +117,7 @@ void each_word(const int list_limit, ifstream &inputFile, string words[])
 }
 
 // Score - ABDULLAH ABDULLAH
-int letter_checker(const string words[], char blank_for_word[], int &word_index)
+int letter_checker(const string words[], char space[], int &checker)
 {
     char letter;
     int i = 0;
@@ -134,16 +134,16 @@ int letter_checker(const string words[], char blank_for_word[], int &word_index)
         int count_letter = 0;
         bool found_letter = false;
 
-        while (search_letter < words[word_index].length())
+        while (search_letter < words[checker].length())
         {
-            if (blank_for_word[search_letter] == letter)
+            if (space[search_letter] == letter)
             {
                 cout << "You have already guessed the letter!";
                 score--;
             }
-            if (words[word_index][search_letter] == letter)
+            if (words[checker][search_letter] == letter)
             {
-                blank_for_word[search_letter] = letter;
+                space[search_letter] = letter;
                 found_letter = true;
                 score++;
             }
@@ -152,17 +152,17 @@ int letter_checker(const string words[], char blank_for_word[], int &word_index)
         i++;
 
         int j = 0;
-        while (j < words[word_index].length())
+        while (j < words[checker].length())
         {
-            if (blank_for_word[j] != '_')
+            if (space[j] != '_')
                 count_letter++;
             j++;
         }
 
         int k = 0;
-        while (k < words[word_index].length())
+        while (k < words[checker].length())
         {
-            cout << blank_for_word[k] << " ";
+            cout << space[k] << " ";
             k++;
         }
 
@@ -174,11 +174,11 @@ int letter_checker(const string words[], char blank_for_word[], int &word_index)
         }
 
         cout << "\n\nFigure Display\n";
-        int check = figure_input(wrong_choice, words, word_index);
+        int check = figure_input(wrong_choice, words, checker);
 
-        rounded_score = static_cast<double>(score) / words[word_index].length() * 10;
+        rounded_score = static_cast<double>(score) / words[checker].length() * 10;
 
-        if (count_letter == words[word_index].length() && check == 0)
+        if (count_letter == words[checker].length() && check == 0)
         {
             cout << "\n\nYou guessed the right word! ";
             rounded_score += 2;
@@ -205,7 +205,7 @@ int letter_checker(const string words[], char blank_for_word[], int &word_index)
 }
 
 // ASCII Drawing - Umer Zahir
-int figure_input(int wrong_choice, const string words[], int word_index)
+int figure_input(int wrong_choice, const string words[], int checker)
 {
     char head = 'O', left_body = '/', right_body = '\\', body = '|';
 
@@ -224,7 +224,7 @@ int figure_input(int wrong_choice, const string words[], int word_index)
     if (wrong_choice > 6)
     {
         cout << "\n\nGame Over! ";
-        cout << "\n\nYour word is " << words[word_index];
+        cout << "\n\nYour word is " << words[checker];
 
         return -1;
     }
@@ -232,11 +232,11 @@ int figure_input(int wrong_choice, const string words[], int word_index)
 }
 
 // Score Board - Umer Zahir
-void score_marker(ofstream &outputFile, const int score_list[], const string words_list[], int try_index)
+void score_marker(ofstream &outputFile, const int score_list[], const string words_list[], int checkit)
 {
     int i = 0;
 
-    while (i < try_index)
+    while (i < checkit)
     {
         outputFile << words_list[i] << ": " << score_list[i] << endl;
         i++;
