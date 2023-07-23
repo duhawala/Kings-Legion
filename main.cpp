@@ -37,7 +37,7 @@ int main()
     inputFile.open("ListOfWords.txt");
 
     if (!inputFile) 
-        cout << "Yer fate's still up in them there dusty trails, partner.\n";
+        cout << "You have a future yet to be determined\n";
     else
     {
         int checker, board_points;
@@ -127,7 +127,7 @@ int letter_checker(const string words[], char space[], int &checker)
 
     while (i < MAX_GUESS)
     {
-        cout << "\n\nHowdy, cowboy! Pick a letter and make your guess: ";
+        cout << "\n\nEnter a letter to guess: ";
         cin >> letter;
 
         int search_letter = 0;
@@ -138,7 +138,7 @@ int letter_checker(const string words[], char space[], int &checker)
         {
             if (space[search_letter] == letter)
             {
-                cout << "Yeehaw, partner! You've already wrangled that letter once! ";
+                cout << "You have already guessed the letter!";
                 score--;
             }
             if (words[checker][search_letter] == letter)
@@ -173,19 +173,19 @@ int letter_checker(const string words[], char space[], int &checker)
             score--;
         }
 
-        cout << "\n\nHangman\n";
+        cout << "\n\nFigure Display\n";
         int check = figure_input(wrong_choice, words, checker);
 
         rounded_score = static_cast<double>(score) / words[checker].length() * 10;
 
         if (count_letter == words[checker].length() && check == 0)
         {
-            cout << "\n\nYeehaw, cowboy! You've roped the right word! ";
+            cout << "\n\nYou guessed the right word! ";
             rounded_score += 2;
 
             if (wrong_choice == 0)
             {
-                cout << "\n\nHowdy, partner! You hit the target on your first shot! Well done, cowboy! ";
+                cout << "\n\nCongrats on the first try! ";
                 rounded_score++;
             }
 
@@ -199,7 +199,7 @@ int letter_checker(const string words[], char space[], int &checker)
         }
     }
 
-    cout << "\n\nYour tally on the scoreboard, partner: " << rounded_score << "/10" ;
+    cout << "\n\nYour score is: " << rounded_score << "/10" ;
 
     return rounded_score;
 }
@@ -223,8 +223,8 @@ int figure_input(int wrong_choice, const string words[], int checker)
         cout << " " << right_body;
     if (wrong_choice > 6)
     {
-        cout << "\n\nYeehaw, partner! Wranglin' time's up! ";
-        cout << "\n\nYour word is as elusive as a tumbleweed in the wind, cowboy! " << words[checker];
+        cout << "\n\nGame Over! ";
+        cout << "\n\nYour word is " << words[checker];
 
         return -1;
     }
