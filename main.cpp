@@ -79,16 +79,16 @@ int main()
 void greetings()
 {
     char ch;
-    cout << "Welcome to Hangman!\n\n";
-    cout << "Rules of the game:\n";
-    cout << "1. There were will be a number of blanks generated depending on the word.\n";
-    cout << "2. Try to guess each letter of the word.\n";
-    cout << "3. Each wrong guess displays the parts of the hangman.\n";
-    cout << "4. When the hangman is fully drawn, you're out!.\n";
-    cout << "5. Correct guess: +1 point || Wrong guess: -1 point\n";
-    cout << "6. Guessing the full word: +2 points and without errors: +3 points\n";
-    cout << "7. Good Luck!\n\n";
-    cout << "Press any key to continue to game: ";
+    cout << "Welcome to the town of Hangman, where words are the law\n\n";
+    cout << "Hit the target\n";
+    cout << "1. The game is designed to be quick and addictive, ensuring players stay engaged.\n";
+    cout << "2. Players have 10 chances to guess the wanted cowboy's name correctly.\n";
+    cout << "3. No hints or clues will be provided, making the game more intense and challenging.\n";
+    cout << "4. The objective is to guess the cowboy's name and save them from harm.\n";
+    cout << "5. If a wrong word is guessed, the cowboy's fate is sealed, and they will meet their untimely end.\n";
+    cout << "6. Players will get opportunities to save other cowboy lives during the game.\n";
+    cout << "7. Howdy, partner! Happy trails ahead!\n\n";
+    cout << "Howdy, partner! Press any key to continue to the game: ";
     cin >> ch;
 }
 
