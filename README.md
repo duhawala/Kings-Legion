@@ -1,11 +1,8 @@
-# KING's LEGION - ASCII/Text Based Game  
+# Kings - Legion
+Activity Led Computer Science Project - 2
 
-"4075CEM - Activity led Computer Science Project 2"
-
-
-
-## DESCRIPTION 
-In this age-old text-based game of Hangman, the player must guess a hidden word by putting letters together. With each incorrect guess, a new body part is added to the hanging man, which is represented by ASCII graphics in the game. The objective is to identify the word before the hangman becomes fully formed.
+## Description
+In this text-based Hangman game, guess a hidden word by assembling letters while avoiding a fully formed ASCII hangman.
 
 ## INSTALLATION
 To install the application, follow these steps:
@@ -18,21 +15,17 @@ To install the application, follow these steps:
 
 ## USAGE
 To use the application, follow these steps:
-
 1.  Follow the procedure given in the [Installation](https://github.com/duhawala/Kings-Legion#installation) section.
 2.  Basically, it's a Hangman game; follow the prompts and guess the word.
 
 ## CREDITS
-
-There are Three members in our Team [KINGS LEGION], making a Text-Based ASCII game in C++. Everyone uniformly contributed towards the completion of the project.
-
+There are Three members in our Team making a Text-Based ASCII game in C++. Everyone uniformly contributed towards the completion of the project.
 - **Abdullah Abdullah - 11337261**
 - **Murtuza Duhawala - 13280734**
 - **Hafiz Umer Zahir - 13521121**
 
-
 # Final Verdict
-The entire project went smoothly, and each member cooperated while carrying out their various roles. We hope you will have fun playing that game and that you'll find it flawless ;)
+The entire project went smoothly, and each member cooperated while carrying out their various roles. We hope you will have fun playing that game and that you'll find it flawless.
 
 ## LICENSE
 This project is licensed under the MIT License.
