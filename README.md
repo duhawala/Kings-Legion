@@ -4,7 +4,7 @@ Activity Led Computer Science Project - 2
 ## Description
 In this text-based Hangman game, guess a hidden word by assembling letters while avoiding a fully formed ASCII hangman.
 
-## INSTALLATION
+## Installation
 To install the application, follow these steps:
 
 1. Ensure that your system has GCC.
@@ -13,12 +13,12 @@ To install the application, follow these steps:
 4. After compilation using GCC in C++, another file is generated, which is **a.out**
 5. To run the application directly, use **./a.out**
 
-## USAGE
+## Usage
 To use the application, follow these steps:
 1.  Follow the procedure given in the [Installation](https://github.com/duhawala/Kings-Legion#installation) section.
 2.  Basically, it's a Hangman game; follow the prompts and guess the word.
 
-## CREDITS
+## Credits
 There are Three members in our Team making a Text-Based ASCII game in C++. Everyone uniformly contributed towards the completion of the project.
 - **Abdullah Abdullah - 11337261**
 - **Murtuza Duhawala - 13280734**
@@ -27,5 +27,5 @@ There are Three members in our Team making a Text-Based ASCII game in C++. Every
 # Final Verdict
 The entire project went smoothly, and each member cooperated while carrying out their various roles. We hope you will have fun playing that game and that you'll find it flawless.
 
-## LICENSE
+## License
 This project is licensed under the MIT License.
