@@ -24,7 +24,7 @@ There are Three members in our Team making a Text-Based ASCII game in C++. Every
 - **Murtuza Duhawala - 13280734**
 - **Hafiz Umer Zahir - 13521121**
 
-# Final Verdict
+## Final Verdict
 The entire project went smoothly, and each member cooperated while carrying out their various roles. We hope you will have fun playing that game and that you'll find it flawless.
 
 ## License
