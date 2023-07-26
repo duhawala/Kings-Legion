@@ -1,5 +1,6 @@
-# Kings - Legion
-Activity Led Computer Science Project - 2
+# KING's LEGION - ASCII/Text Based Game  
+
+4075CEM - Activity led Computer science Project 2
 
 ## Description
 In this text-based Hangman game, guess a hidden word by assembling letters while avoiding a fully formed ASCII hangman.
